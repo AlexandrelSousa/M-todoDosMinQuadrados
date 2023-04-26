@@ -4,13 +4,33 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewerport" content="width=device-width, initial-scale=1.0">
-        <tittle>CalcNum</tittle>
+        <title>CalcNum</title>
         <link rel="stylesheet" type="text/css" href="index.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     </head>
     <body>
-        <canvas id="grafico1" style="width: 500px; height: 500px;">
-
-        </canvas>
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <div style="width: 500px; height: 500px;">
+            <canvas id="myChart"></canvas>
+            <table border="1">
+                <tr>
+                    <th>Xi</th><th>Yi</th>
+                </tr>
+                <tr>
+                    <td>1</td><td>3</td>
+                </tr>
+                <tr>
+                    <td>3</td><td>7</td>
+                </tr>
+                <tr>
+                    <td>4</td><td>9</td>
+                </tr>
+                <tr>
+                    <td>∑ = 8</td><td>∑ = 19</td>
+                </tr>
+            </table>
+            <button onClick="minimosQuadrados(1,3,4,3,7,9)">teste</button>
+        </div>
+        <script src="index.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.2.1/chart.min.js"></script>
     </body>
 </html>
